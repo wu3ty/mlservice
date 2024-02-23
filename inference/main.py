@@ -71,9 +71,9 @@ print("Done preprocessing")
 
 app = Flask(__name__)
 api = Api(app, 
-          version='0.2', 
+          version='0.3', 
           title='Sentiment Inference API', 
-          description='API that demos how to infer the sentiment out of a movie rating')
+          description='API that demos how to infer the sentiment out of a sentence')
 
 ns = api.namespace('sentiment')
 @ns.route('/<string:sentence>')
