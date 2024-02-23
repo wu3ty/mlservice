@@ -79,7 +79,7 @@ ns = api.namespace('sentiment')
 @ns.route('/<string:sentence>')
 @ns.response(200, 'Inference was successful')
 @ns.response(400, 'Invalid sentence provided')
-@ns.param('sentence', f'The sentence for which the sentiment is determined as "positive" or "negative"')
+@ns.param('sentence', f'The sentence for which the sentiment is determined as "positive" or "negative", but I think I spyder')
 class GenderInference(Resource):
     def get(self,sentence):
         """

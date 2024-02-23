@@ -9,4 +9,4 @@ steps:
 
 # This step will deploy the new container image to cloud run
 - name: 'gcr.io/cloud-builders/gcloud'
-  args: ['run','deploy', 'mlservice-inference-service', '--image=gcr.io/$PROJECT_ID/mlservice-inference', '--region=us-west4', '--allow-unauthenticated', '--memory', '1Gi', '--max-instances', '2', '--min-instances', '0']
+  args: ['run','deploy', 'mlservice-inference-service', '--image=gcr.io/$PROJECT_ID/mlservice-inference', '--region=europe-west3', '--allow-unauthenticated', '--memory', '1Gi', '--max-instances', '2', '--min-instances', '0']
